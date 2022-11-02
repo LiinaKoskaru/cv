@@ -2,81 +2,52 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <title>🐓Liina's Personal Site</title>
+  <title>🐓 Liina Koskaru - Experiments 🐓</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="keywords" content="visual designer, graphic designer, web designer">
+  <meta name="description" content="Visual Designer from Estonia">
+	<link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Vollkorn:ital@0;1&display=swap" rel="stylesheet">
+  <!-- Lottie web player -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+   <!-- Bodymovin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+
 </head>
 
 <body>
-  <table cellspacing="20">
-    <tr>
-      <td><img src="images/liina.png" alt="liina profile picture"></td>
-      <td>
-        <p><em>I'm currently working as <strong>UI Designer</strong>.</em></p>
-        <p>I ❤ cycling and coffee</p>
-      </td>
-    </tr>
-  </table>
-  <hr>
-  <h3>Education</h3>
-  <ul>
-    <li><a href="https://www.thegraphicdesignschool.com/">The Graphic Design School</a> - Graphic Design</li>
-    <li><a href="https://www.emu.ee/en/home/">Estonian University of Life Sciences</a> - Landscape Arhitecture</li>
-  </ul>
-  <hr>
-  <h3>Work Experience</h3>
-  <table cellspacing="10">
-    <thead>
-      <tr>
-        <th>Dates</th>
-        <th>Work</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>2018 - Present</td>
-        <td>UI Designer</td>
-      </tr>
-      <tr>
-        <td>2012 - 2018</td>
-        <td>Graphic Designer</td>
-      </tr>
-      <tr>
-        <td>2009</td>
-        <td>Landscape Architecture Intern</td>
-      </tr>
-      <tr>
-        <td>2008</td>
-        <td>Architectural Modelmaker</td>
-      </tr>
-    </tbody>
-  </table>
-  <hr>
-  <h3>Skills</h3>
-  <table cellspacing="10">
-    <tr>
-      <td>Typography and color theory</td>
-      <td>★★★★★</td>
-    </tr>
-    <tr>
-      <td>Style guides</td>
-      <td>★★★★★</td>
-    </tr>
-    <tr>
-      <td>Interaction design principles</td>
-      <td>★★★★★</td>
-    </tr>
-    <tr>
-      <td>UI Prototyping</td>
-      <td>★★★★</td>
-    </tr>
-    <tr>
-      <td>Web Development</td>
-      <td>★★</td>
-    </tr>
-  </table>
-  <hr>
-  <a href="hobbies.html">My Hobbies</a>
-  <a href="contact-me.html">Contact Me</a>
-</body>
 
+  <h1>Experiments</h1>
+  
+  <div class="grid-container">
+      <!-- json file host locally via bodymovin plugin-->
+      <div class="grid-item" id="animation container"></div>
+      <script>
+          var animation = bodymovin.loadAnimation({
+            container: document.getElementById ('animation container'),
+            path: 'dog_01.json',
+            render:'svg',
+            loop: true,
+            autoplay: true,
+            name: 'dog animation'
+          });
+      </script>
+
+      <!-- json file host via Lottie web player-->
+      <div class="grid-item">
+          <lottie-player src="https://lottie.host/959a40f4-12a9-422b-8541-856f8ccbb8e3/nqEhR9E1Uz.json"
+          background="transparent"
+          speed="1"
+          style="width: 100%; height: auto;"
+          loop autoplay></lottie-player>
+      </div>
+  
+  </div>
+  
+  </body>
 </html>
+
