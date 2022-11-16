@@ -1,53 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-  <title>🐓 Liina Koskaru - Experiments 🐓</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <meta name="keywords" content="visual designer, graphic designer, web designer">
-  <meta name="description" content="Visual Designer from Estonia">
-	<link rel="stylesheet" href="css/styles.css">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Vollkorn:ital@0;1&display=swap" rel="stylesheet">
-  <!-- Lottie web player -->
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-   <!-- Bodymovin -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiments</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
-
 <body>
-
-  <h1>Experiments</h1>
   
-  <div class="grid-container">
-      <!-- json file host locally via bodymovin plugin-->
-      <div class="grid-item" id="animation container"></div>
-      <script>
-          var animation = bodymovin.loadAnimation({
-            container: document.getElementById ('animation container'),
-            path: 'dog_01.json',
-            render:'svg',
-            loop: true,
-            autoplay: true,
-            name: 'dog animation'
-          });
-      </script>
-
-      <!-- json file host via Lottie web player-->
-      <div class="grid-item">
-          <lottie-player src="https://lottie.host/959a40f4-12a9-422b-8541-856f8ccbb8e3/nqEhR9E1Uz.json"
-          background="transparent"
-          speed="1"
-          style="width: 100%; height: auto;"
-          loop autoplay></lottie-player>
-      </div>
-  
-  </div>
-  
-  </body>
+</body>
 </html>
-
